@@ -1,0 +1,98 @@
+[0m16:04:04.051525 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F1A5602120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F1A7C2BED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F1A7C2BB10>]}
+
+
+============================== 16:04:04.060513 | 269aceac-219c-45c8-9a6b-9f1d305d8890 ==============================
+[0m16:04:04.060513 [info ] [MainThread]: Running with dbt=1.12.6
+[0m16:04:04.063873 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\shama\\Documents\\data project prac', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt init my_pipeline', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m16:04:04.122027 [debug] [MainThread]: Starter project path: C:\Users\shama\Documents\data project prac\venv\Lib\site-packages\dbt\include\starter_project
+[0m16:04:04.158835 [info ] [MainThread]: Setting up your profile.
+[0m16:04:24.677010 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m16:04:24.677845 [info ] [MainThread]: dbt version: 1.12.6
+[0m16:04:24.678296 [info ] [MainThread]: python version: 3.13.15
+[0m16:04:24.678783 [info ] [MainThread]: python path: C:\Users\shama\Documents\data project prac\venv\Scripts\python.exe
+[0m16:04:24.679195 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m16:04:24.793626 [info ] [MainThread]: Using profiles dir at C:\Users\shama\Documents\data project prac
+[0m16:04:24.794505 [info ] [MainThread]: Using profiles.yml file at C:\Users\shama\Documents\data project prac\profiles.yml
+[0m16:04:24.831731 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\shama\Documents\data project prac\my_pipeline\dbt_project.yml
+[0m16:04:24.882740 [info ] [MainThread]: adapter type: duckdb
+[0m16:04:24.900331 [info ] [MainThread]: adapter version: 1.11.0
+[0m16:04:25.091030 [info ] [MainThread]: Configuration:
+[0m16:04:25.091717 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:04:25.092228 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:04:25.092641 [info ] [MainThread]: Required dependencies:
+[0m16:04:25.093071 [debug] [MainThread]: Executing "git --help"
+[0m16:04:25.143319 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:04:25.143845 [debug] [MainThread]: STDERR: "b''"
+[0m16:04:25.144248 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:04:25.144687 [info ] [MainThread]: Connection:
+[0m16:04:25.145129 [info ] [MainThread]:   database: dev
+[0m16:04:25.145541 [info ] [MainThread]:   schema: main
+[0m16:04:25.146052 [info ] [MainThread]:   path: dev.duckdb
+[0m16:04:25.146517 [info ] [MainThread]:   config_options: None
+[0m16:04:25.146942 [info ] [MainThread]:   extensions: None
+[0m16:04:25.147364 [info ] [MainThread]:   settings: {}
+[0m16:04:25.147777 [info ] [MainThread]:   external_root: .
+[0m16:04:25.148152 [info ] [MainThread]:   use_credential_provider: None
+[0m16:04:25.148568 [info ] [MainThread]:   attach: None
+[0m16:04:25.148970 [info ] [MainThread]:   filesystems: None
+[0m16:04:25.149344 [info ] [MainThread]:   remote: None
+[0m16:04:25.150013 [info ] [MainThread]:   plugins: None
+[0m16:04:25.151345 [info ] [MainThread]:   disable_transactions: False
+[0m16:04:25.152160 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m16:04:25.504383 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m16:04:29.316601 [debug] [MainThread]: Using duckdb connection "debug"
+[0m16:04:29.317455 [debug] [MainThread]: On debug: select 1 as id
+[0m16:04:29.318353 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:04:29.519821 [debug] [MainThread]: SQL status: OK in 0.201 seconds
+[0m16:04:29.522354 [debug] [MainThread]: On debug: Close
+[0m16:04:29.524219 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:04:29.525536 [info ] [MainThread]: [32mAll checks passed![0m
+[0m16:04:29.526697 [info ] [MainThread]: Your new dbt project "my_pipeline" was created!
+Initialized new project in C:\Users\shama\Documents\data project prac\my_pipeline\my_pipeline
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:04:29.529300 [debug] [MainThread]: Command `dbt init` succeeded at 16:04:29.528932 after 25.67 seconds
+[0m16:04:29.530079 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:04:29.531293 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F1A7F17CE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F1A7ACA690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F1A7FCABE0>]}
+[0m16:04:29.533033 [debug] [MainThread]: Flushing usage events
+[0m16:04:31.258791 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:04:54.895379 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A84172A120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A843D6BED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A843D6BB10>]}
+
+
+============================== 16:04:54.900618 | f79ed230-defe-44ec-a7d0-16a7f607c7a7 ==============================
+[0m16:04:54.900618 [info ] [MainThread]: Running with dbt=1.12.6
+[0m16:04:54.901363 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\shama\\Documents\\data project prac', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt init my_pipeline', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m16:04:54.938951 [info ] [MainThread]: A project called my_pipeline already exists here.
+[0m16:04:54.939982 [debug] [MainThread]: Command `dbt init` succeeded at 16:04:54.939843 after 0.24 seconds
+[0m16:04:54.940354 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A843D97100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A843C0A690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A843E146B0>]}
+[0m16:04:54.940786 [debug] [MainThread]: Flushing usage events
+[0m16:04:57.152291 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:05:44.515996 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022832A36120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228350A3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228350A3B10>]}
+
+
+============================== 16:05:44.521307 | 29cb1e51-0849-4431-9591-de3e53a837b7 ==============================
+[0m16:05:44.521307 [info ] [MainThread]: Running with dbt=1.12.6
+[0m16:05:44.521998 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\shama\\Documents\\data project prac', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m16:05:44.522530 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\shama\Documents\data project prac\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:05:44.523548 [debug] [MainThread]: Command `dbt run` failed at 16:05:44.523415 after 0.19 seconds
+[0m16:05:44.523948 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228350BA9E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002283504E7B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022835102250>]}
+[0m16:05:44.524350 [debug] [MainThread]: Flushing usage events
+[0m16:05:45.951486 [debug] [MainThread]: An error was encountered while trying to flush usage events

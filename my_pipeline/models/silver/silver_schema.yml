@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: silver_orders
+    description: "Cleaned and filtered e-commerce orders data"
+    columns:
+      - name: order_id
+        tests:
+          - unique     # Check karega ki koi duplicate order_id toh nahi hai
+          - not_null   # Check karega ki order_id kabhi NULL na ho
+
+      - name: customer_id
+        tests:
+          - not_null   # Customer ID hamesha honi chahiye
+
+      - name: amount
+        tests:
+          - not_null   # Amount missing nahi hona chahiye

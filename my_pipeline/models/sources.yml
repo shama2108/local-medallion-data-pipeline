@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: my_pipeline        # Yeh wahi naam hai jo aapne source() function me use kiya hai
+    schema: main           # DuckDB me default schema 'main' hota hai
+    tables:
+      - name: bronze_orders  # Aapki raw table ka naam
